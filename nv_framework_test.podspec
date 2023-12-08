@@ -8,35 +8,32 @@
 
 Pod::Spec.new do |s|
   s.name             = 'nv_framework_test'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of nv_framework_test.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '1.0.0'
+  s.summary          = 'this is my first cocoapods for testing my nv xcframework'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This is my first cocoapods lib for testing my nv xcframework so that we can create lib for users
                        DESC
 
   s.homepage         = 'https://github.com/ashraf-nv/nv_framework_test'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ashraf-nv' => 'ashraf@notifyvisitors.com' }
   s.source           = { :git => 'https://github.com/ashraf-nv/nv_framework_test.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'nv_framework_test/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'nv_framework_test' => ['nv_framework_test/Assets/*.png']
-  # }
+  s.platform = :ios
+  s.ios.deployment_target = '11.0'
+  s.vendored_frameworks = 'frameworks/notifyvisitors_7_0_1.xcframework'
+  
+  
+  
+#  s.vendored_frameworks = [
+#        'frameworks/notifyvisitors_7_0_1.xcframework'
+#      ]
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+# s.resources = ['notifyvisitors/Assets/**/*.png', 'notifyvisitors/Classes/nvResourceValues.plist']
+# s.vendored_library = 'notifyvisitors/Classes/**/*.a'
+  
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    
 end
