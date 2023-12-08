@@ -21,17 +21,13 @@ Pod::Spec.new do |s|
   
   s.platform = :ios
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = 'frameworks/notifyvisitors_7_0_1.xcframework'
-  
-  
-  
-#  s.vendored_frameworks = [
-#        'frameworks/notifyvisitors_7_0_1.xcframework'
-#      ]
+  s.requires_arc     = true
+  s.default_subspec = "nv_framework_test"
+  s.subspec 'nv_framework_test' do |ss|
+    ss.vendored_library = 'nv_framework_test/Classes/**/*.xcframework'
+    end
+    
 
-# s.resources = ['notifyvisitors/Assets/**/*.png', 'notifyvisitors/Classes/nvResourceValues.plist']
-# s.vendored_library = 'notifyvisitors/Classes/**/*.a'
-  
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
