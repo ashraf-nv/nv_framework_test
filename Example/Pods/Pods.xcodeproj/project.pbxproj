@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0EB44BDEB828F3795504422EEEDC7C5F /* Pods-nv_framework_test_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2A91950D89988255C21A2D00E50503 /* Pods-nv_framework_test_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2377C13B9DBC7554E313EA17628AF177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		36F02D119CEFCF02B4C1825094439FA6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807630DDCA71BF91DD84B5BADACDC484 /* ReplaceMe.swift */; };
+		35C3C2AF2B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C3C2AE2B24B04300AAC617 /* notifyvisitors.xcframework */; };
+		35C3C2B02B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C3C2AE2B24B04300AAC617 /* notifyvisitors.xcframework */; };
+		35C3C2B12B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C3C2AE2B24B04300AAC617 /* notifyvisitors.xcframework */; };
 		450B04D8ED3064A34DEAE11714054CC4 /* Pods-nv_framework_test_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14D5FF76E1C31B6C1DA9B48E2A0D85 /* Pods-nv_framework_test_Example-dummy.m */; };
 		4F3DB70C2A609CCC59CA9A29197D93D1 /* Pods-nv_framework_test_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3805C0BFEC0A38546DFFBD9005E70B0 /* Pods-nv_framework_test_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6284023F5AE4FAE7067AFB8D303B52B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		01556FC5A07B648FA8F4412A7C41FB00 /* Pods-nv_framework_test_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nv_framework_test_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0814DF9EE5974D33B1BF7FD3838FA0CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0814DF9EE5974D33B1BF7FD3838FA0CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0E14D5FF76E1C31B6C1DA9B48E2A0D85 /* Pods-nv_framework_test_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nv_framework_test_Example-dummy.m"; sourceTree = "<group>"; };
 		13D73AC80C30465F3638D38CC4D7A30A /* Pods-nv_framework_test_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-nv_framework_test_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1A610E827E07F44B1D9E019F9BB1D562 /* Pods-nv_framework_test_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		2404E401036420CA168D07CFE0751BCD /* nv_framework_test-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nv_framework_test-umbrella.h"; sourceTree = "<group>"; };
 		2AF4EFF7BFBC924450700CC38611DA40 /* Pods-nv_framework_test_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nv_framework_test_Tests.modulemap"; sourceTree = "<group>"; };
 		2FC192BFF6CA1A770EE4FF4AEF12E287 /* Pods-nv_framework_test_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		35C3C2AE2B24B04300AAC617 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = notifyvisitors.xcframework; path = ../../notifyvisitors.xcframework; sourceTree = "<group>"; };
 		5E781DA03A6B046145A393BFD699DF05 /* Pods-nv_framework_test_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-nv_framework_test_Example"; path = Pods_nv_framework_test_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCE9C28DC2844E8D9C8B949EFD0D1C6 /* nv_framework_test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nv_framework_test.modulemap; sourceTree = "<group>"; };
 		62B3D805ECF40923C496A5E66E3D3CD1 /* Pods-nv_framework_test_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nv_framework_test_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -53,22 +56,21 @@
 		6963ACA14FBEE766D563E0499A1A99E5 /* nv_framework_test-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "nv_framework_test-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7D9CA14512DD6DF591450FB222567455 /* Pods-nv_framework_test_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nv_framework_test_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		807630DDCA71BF91DD84B5BADACDC484 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = nv_framework_test/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		840760766C7CDA53B7BBC69996D191B1 /* nv_framework_test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nv_framework_test-dummy.m"; sourceTree = "<group>"; };
 		84911E4485AA067FEDA8DDF4532D362F /* Pods-nv_framework_test_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nv_framework_test_Example-Info.plist"; sourceTree = "<group>"; };
 		891C41F2FF486A7F0C55EC86DA47D0FB /* nv_framework_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nv_framework_test.release.xcconfig; sourceTree = "<group>"; };
 		8BACACE3E7BE0678810642D82CEA3F4B /* Pods-nv_framework_test_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-nv_framework_test_Tests"; path = Pods_nv_framework_test_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD3EF287978435E483354D937B72A34 /* Pods-nv_framework_test_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A538FFB04E77690411F210C3A5DA87B6 /* Pods-nv_framework_test_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nv_framework_test_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF2A91950D89988255C21A2D00E50503 /* Pods-nv_framework_test_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nv_framework_test_Example-umbrella.h"; sourceTree = "<group>"; };
 		B7A5084EE264125F9A844AECCEFC3F8F /* nv_framework_test-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nv_framework_test-prefix.pch"; sourceTree = "<group>"; };
 		B7E93FF3033A1DAB49089D7FA1C3F3E8 /* Pods-nv_framework_test_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC42C6C39DDB69E21AD76F5E638DE66A /* nv_framework_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nv_framework_test.debug.xcconfig; sourceTree = "<group>"; };
 		D05A7FBCFCDF4097F3688E4DF3E5A30D /* Pods-nv_framework_test_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nv_framework_test_Example.modulemap"; sourceTree = "<group>"; };
-		D0DD4401542CA0984747AD17DC612858 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D0DD4401542CA0984747AD17DC612858 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D3805C0BFEC0A38546DFFBD9005E70B0 /* Pods-nv_framework_test_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nv_framework_test_Tests-umbrella.h"; sourceTree = "<group>"; };
-		DD965C49A69353FD5477B46AA1E90E4B /* nv_framework_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = nv_framework_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD965C49A69353FD5477B46AA1E90E4B /* nv_framework_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = nv_framework_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA48615FF35DA81538986E38213027E5 /* nv_framework_test */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nv_framework_test; path = nv_framework_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2377C13B9DBC7554E313EA17628AF177 /* Foundation.framework in Frameworks */,
+				35C3C2AF2B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6284023F5AE4FAE7067AFB8D303B52B7 /* Foundation.framework in Frameworks */,
+				35C3C2B12B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E82D1BDAD05F7359829BD2B27809BA64 /* Foundation.framework in Frameworks */,
+				35C3C2B02B24B04300AAC617 /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				35C3C2AE2B24B04300AAC617 /* notifyvisitors.xcframework */,
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
@@ -161,7 +167,6 @@
 		BF2921D006E09AD121087A4B397C5116 /* nv_framework_test */ = {
 			isa = PBXGroup;
 			children = (
-				807630DDCA71BF91DD84B5BADACDC484 /* ReplaceMe.swift */,
 				DC273A8CC6F985A7200E571A406654C4 /* Pod */,
 				8D734A23F3A589B89B03561FCE902DFB /* Support Files */,
 			);
@@ -384,7 +389,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B14DF6A69152CC01025259FFD11AC1D /* nv_framework_test-dummy.m in Sources */,
-				36F02D119CEFCF02B4C1825094439FA6 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +427,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -456,7 +464,11 @@
 				INFOPLIST_FILE = "Target Support Files/nv_framework_test/nv_framework_test-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/nv_framework_test/nv_framework_test.modulemap";
 				PRODUCT_MODULE_NAME = nv_framework_test;
 				PRODUCT_NAME = nv_framework_test;
@@ -487,7 +499,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -582,7 +598,11 @@
 				INFOPLIST_FILE = "Target Support Files/nv_framework_test/nv_framework_test-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/nv_framework_test/nv_framework_test.modulemap";
 				PRODUCT_MODULE_NAME = nv_framework_test;
 				PRODUCT_NAME = nv_framework_test;
@@ -614,7 +634,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -714,7 +738,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example.modulemap";
 				OTHER_LDFLAGS = "";
