@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'nv_framework_test_Example' do
-  pod 'nv_framework_test', :path => '../'
+  pod 'nv_framework_test'
 
   target 'nv_framework_test_Tests' do
     inherit! :search_paths

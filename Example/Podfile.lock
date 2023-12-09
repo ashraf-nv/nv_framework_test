@@ -1,5 +1,5 @@
 PODS:
-  - nv_framework_test (0.1.0)
+  - nv_framework_test (4.0.1)
 
 DEPENDENCIES:
   - nv_framework_test (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  nv_framework_test: cfdbc011a3a4583bd61f079681ae35898b3c782f
+  nv_framework_test: 416c907d6f6cc2f020ca56dc7c426ca21b00e201
 
 PODFILE CHECKSUM: 9d58fe0ea131659eb13ba7178f6c68d8f7ed8b68
 

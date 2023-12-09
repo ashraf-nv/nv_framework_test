@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        notifyvisitors.show(nil, customRule: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
