@@ -24,44 +24,44 @@ typedef NS_ENUM(NSUInteger, nvPushBadgeCount){
     nvPushBadgeCountClearAll
 };
 
-typedef void(^NotificationListData)(NSMutableArray*);
+typedef void(^NotificationListData)(NSMutableArray*_Nullable);
 typedef void(^nvGetCount)(NSInteger);
-typedef void(^nvUnreadCenterCount)(NSDictionary*);
+typedef void(^nvUnreadCenterCount)(NSDictionary*_Nullable);
 
-typedef void(^NotificationClickResponseData)(NSMutableDictionary*);
-typedef void(^nv_UID)(NSString *);
+typedef void(^NotificationClickResponseData)(NSMutableDictionary*_Nullable);
+typedef void(^nv_UID)(NSString *_Nullable);
 
 @protocol notifyvisitorsDelegate <NSObject>
 
 @optional
--(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*)userInfo;
--(void)notifyvisitorsEventsResponseCallback:(NSDictionary*)callback;
+-(void)NotifyvisitorsGetEventResponseWithUserInfo:(NSDictionary*_Nullable)userInfo DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.1 Use [notifyvisitors notifyvisitorsEventsResponseCallback:] (see notifyvisitors.h)");
+-(void)notifyvisitorsEventsResponseCallback:(NSDictionary*_Nullable)callback;
 @end
 
 
 @interface NVCenterStyleConfig : NSObject
 
-@property (strong, nonatomic)UIColor *unselectedTabTextColor;
+@property (strong, nonatomic)UIColor * _Nullable unselectedTabTextColor;
 
-@property (strong, nonatomic)UIColor *selectedTabTextColor;
+@property (strong, nonatomic)UIColor * _Nullable selectedTabTextColor;
 
-@property (strong, nonatomic)UIColor *selectedTabBgColor;
-@property (strong, nonatomic)UIColor *unselectedTabBgColor;
+@property (strong, nonatomic)UIColor * _Nullable selectedTabBgColor;
+@property (strong, nonatomic)UIColor * _Nullable unselectedTabBgColor;
 
 @property (nonatomic)NSInteger selectedTabIndex;
-@property (strong, nonatomic)UIFont *tabTextfont;
-@property (strong, nonatomic)UIColor *tabBadgeCountBorderColor;
-@property (strong, nonatomic)UIColor *tabBadgeCountFillColor;
-@property (strong, nonatomic)UIColor *tabBadgeCountTextColor;
+@property (strong, nonatomic)UIFont * _Nullable tabTextfont;
+@property (strong, nonatomic)UIColor * _Nullable tabBadgeCountBorderColor;
+@property (strong, nonatomic)UIColor * _Nullable tabBadgeCountFillColor;
+@property (strong, nonatomic)UIColor * _Nullable tabBadgeCountTextColor;
 @property (nonatomic)BOOL shouldTabBadgeShine;
 
-+(instancetype)sharedInstance;
++(instancetype _Nullable )sharedInstance;
 
--(void)setFirstTabWithTabLable:(NSString *)tabLabel TagDisplayName:(NSString *)tabDisplayName;
+-(void)setFirstTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
 
--(void)setSecondTabWithTabLable:(NSString *)tabLabel TagDisplayName:(NSString *)tabDisplayName;
+-(void)setSecondTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
 
--(void)setThirdTabWithTabLable:(NSString *)tabLabel TagDisplayName:(NSString *)tabDisplayName;
+-(void)setThirdTabWithTabLable:(NSString *_Nonnull)tabLabel TagDisplayName:(NSString *_Nonnull)tabDisplayName;
 
 @end
 
@@ -69,78 +69,80 @@ typedef void(^nv_UID)(NSString *);
 
 @interface notifyvisitors : NSObject <UNUserNotificationCenterDelegate>
 
-@property (nonatomic, weak)id <notifyvisitorsDelegate> delegate;
+@property (nonatomic, weak)id <notifyvisitorsDelegate> _Nullable delegate;
 
-+(instancetype)sharedInstance;
++(instancetype _Nonnull )sharedInstance;
 
 #pragma mark - INITIAL INTEGRATION METHODS
 
-+(void)Initialize:(NSString *)nvMode;
++(void)Initialize:(NSString *_Nullable)nvMode;
 
-+(void)applicationDidEnterBackground:(UIApplication *)application;
-+(void)sceneDidEnterBackground:(UIScene *)scene API_AVAILABLE(ios(13.0));
++(void)applicationDidEnterBackground:(UIApplication *_Nullable)application;
++(void)sceneDidEnterBackground:(UIScene *_Nullable)scene API_AVAILABLE(ios(13.0));
 
-+(void)applicationWillEnterForeground:(UIApplication *)application;
-+(void)sceneWillEnterForeground:(UIScene *)scene API_AVAILABLE(ios(13.0));
++(void)applicationWillEnterForeground:(UIApplication *_Nullable)application;
++(void)sceneWillEnterForeground:(UIScene *_Nullable)scene API_AVAILABLE(ios(13.0));
 
-+(void)applicationDidBecomeActive:(UIApplication *)application;
-+(void)sceneDidBecomeActive:(UIScene *)scene API_AVAILABLE(ios(13.0));
++(void)applicationDidBecomeActive:(UIApplication *_Nullable)application;
++(void)sceneDidBecomeActive:(UIScene *_Nullable)scene API_AVAILABLE(ios(13.0));
 
 +(void)applicationWillTerminate;
 
-+(void)OpenUrlWithApplication:(UIApplication *)application Url:(NSURL *)url;
-+(NSMutableDictionary*)OpenUrlGetDataWithApplication: (UIApplication *)application Url:(NSURL *)url;
++(void)OpenUrlWithApplication:(UIApplication *_Nullable)application Url:(NSURL *_Nullable)url;
++(NSMutableDictionary*_Nullable)OpenUrlGetDataWithApplication: (UIApplication *_Nullable)application Url:(NSURL *_Nullable)url;
 
-+(void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions API_AVAILABLE(ios(13.0));
-+(void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts API_AVAILABLE(ios(13.0));
++(void)scene:(UIScene *_Nullable)scene willConnectToSession:(UISceneSession *_Nullable)session options:(UISceneConnectionOptions *_Nullable)connectionOptions API_AVAILABLE(ios(13.0));
++(void)scene:(UIScene *_Nullable)scene openURLContexts:(NSSet<UIOpenURLContext *> *_Nullable)URLContexts API_AVAILABLE(ios(13.0));
 
-+(void)trackEvents:(NSString *)event_name Attributes:(NSMutableDictionary *)attributes lifetimeValue:(NSString *)ltv Scope:(int)scope;
++(void)trackEvents:(NSString *_Nullable)event_name Attributes:(NSMutableDictionary *_Nullable)attributes lifetimeValue:(NSString *_Nullable)ltv Scope:(int)scope;
 
-+(void)UserIdentifier:(NSString *) userID UserParams:(NSMutableDictionary *) UserParams;
-+(void)getNvUid:(nv_UID)nvUID;
++(void)UserIdentifier:(NSString *_Nullable) userID UserParams:(NSMutableDictionary *_Nullable) UserParams;
++(void)getNvUid:(nv_UID _Nullable)nvUID;
 
-+(void)Show:(NSMutableDictionary *)UserTokens CustomRule:(NSMutableDictionary *)customRule;
-+(void)scrollViewDidScroll:(UIScrollView *) scrollView;
++(void)Show:(NSMutableDictionary *_Nullable)UserTokens CustomRule:(NSMutableDictionary *_Nullable)customRule;
++(void)scrollViewDidScroll:(UIScrollView *_Nullable) scrollView;
 +(void)DismissAllNotifyvisitorsInAppNotifications;
 +(void)StopInAppNotifications;
 +(void)requestAppleAppStoreInAppReview;
 
++(void)RegisterPushWithDelegate:(id _Nullable )delegate App:(UIApplication *_Nullable)application launchOptions:(NSDictionary *_Nullable)launchOptions;
++(void)DidRegisteredNotification:(UIApplication *_Nullable)application deviceToken:(NSData *_Nullable)deviceToken;
++(NSString *_Nullable)getPushRegistrationToken;
 
-//+(void)didReceiveRemoteNotificationWithUserInfofor_iOS7orBelow:(NSDictionary *)userInfo;
++(void)schedulePushNotificationwithNotificationID:(NSString *_Nullable)NID Tag:(NSString *_Nullable)tag TimeinSecond:(NSString *_Nullable)time Title:(NSString *_Nullable)title  Message:(NSString *_Nullable)message URL:(NSString *_Nullable)url  Icon:(NSString *_Nullable)icon;
 
-+(void)RegisterPushWithDelegate:(id)delegate App:(UIApplication *)application launchOptions:(NSDictionary *)launchOptions;
-+(void)DidRegisteredNotification:(UIApplication *)application deviceToken:(NSData *)deviceToken;
-+(NSString *)getPushRegistrationToken;
-
-+(void)schedulePushNotificationwithNotificationID:(NSString *)NID Tag:(NSString *)tag TimeinSecond:(NSString *)time Title:(NSString *)title  Message:(NSString *)message URL:(NSString *)url  Icon:(NSString *)icon;
-
-+(void)pushPreferences:(NSArray *)preferenceList isUnsubscribeFromAll:(BOOL)shouldUnsubscribe;
++(void)pushPreferences:(NSArray *_Nullable)preferenceList isUnsubscribeFromAll:(BOOL)shouldUnsubscribe;
 
 +(void)updatePushBadgeNumberWithValue:(nvPushBadgeCount)nvPushBadgeNumber;
 
-+(void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary *)userInfo;
-+(NSMutableDictionary *)PushNotificationActionDataFromUserInfo:(NSDictionary *)userinfo;
-+(void)didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void(^)(UIBackgroundFetchResult))completionHandler;
++(void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary *_Nullable)userInfo;
++(NSMutableDictionary *_Nullable)PushNotificationActionDataFromUserInfo:(NSDictionary *_Nullable)userinfo;
++(void)didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo fetchCompletionHandler:(void(^_Nullable)(UIBackgroundFetchResult))completionHandler;
 
-+(void)willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0));
++(void)willPresentNotification:(UNNotification *_Nullable)notification withCompletionHandler:(void (^_Nullable)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0));
 
-+(void)didReceiveNotificationResponse:(UNNotificationResponse *)response API_AVAILABLE(ios(10.0));
-+(void)PushNotificationActionDataFromResponse:(UNNotificationResponse *)response AutoRedirectOtherApps:(BOOL)autoRedirect clickResponseData:(NotificationClickResponseData)pushClickResponse API_AVAILABLE(ios(10.0));
++(void)didReceiveNotificationResponse:(UNNotificationResponse *_Nullable)response API_AVAILABLE(ios(10.0));
++(void)PushNotificationActionDataFromResponse:(UNNotificationResponse *_Nullable)response AutoRedirectOtherApps:(BOOL)autoRedirect clickResponseData:(NotificationClickResponseData _Nullable )pushClickResponse API_AVAILABLE(ios(10.0));
 
 
 +(void)NotifyVisitorsNotificationCentre DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 6.4.3 Use [notifyvisitors notificationCenter:] (see notifyvisitors.h)");
 
 +(void)notificationCenter;
-+(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *)configuration;
-+(void)GetNotificationCentreData:(NotificationListData) notificationDataList;
++(void)notificationCenterWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration;
++(void)GetNotificationCentreData:(NotificationListData _Nullable ) notificationDataList DEPRECATED_MSG_ATTRIBUTE("first deprecated in Notifyvisitors iOS SDK 7.0.2 Use [notifyvisitors getNotificationCenterData:] to get reformated data response in NSDictionary format. (see notifyvisitors.h)");
 
-+(void)GetUnreadPushNotification:(nvGetCount)nvUnreadCount;
-+(void)getNotificationCenterCountWithConfiguration:(NVCenterStyleConfig *)configuration countResult:(nvUnreadCenterCount)unreadCenterCounts;
++(void)getNotificationCenterData:(void(^_Nullable)(NSDictionary *_Nullable))notificationsData;
 
-+(void)stopGeofencePushforDateTime:(NSString *)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
+
+//GetNotificationCentreData:(NotificationListData _Nullable ) notificationDataList;
+
++(void)GetUnreadPushNotification:(nvGetCount _Nullable )nvUnreadCount;
++(void)getNotificationCenterCountWithConfiguration:(NVCenterStyleConfig *_Nullable)configuration countResult:(nvUnreadCenterCount _Nullable )unreadCenterCounts;
+
++(void)stopGeofencePushforDateTime:(NSString *_Nullable)nvDateTime additionalHours: (NSInteger)nvtimeinHours;
 
 //+(void)startChatBotWithScreenName:(NSString *)nvBotScreenName;
 
-+(void)LoadAttachmentWithRequest:(UNNotificationRequest *)request bestAttemptContent:(UNMutableNotificationContent *)bestAttemptContent withContentHandler:(nullable void (^)(UNNotificationContent * _Nonnull))contentHandler API_AVAILABLE(ios(10.0));
++(void)LoadAttachmentWithRequest:(UNNotificationRequest *_Nullable)request bestAttemptContent:(UNMutableNotificationContent *_Nullable)bestAttemptContent withContentHandler:(nullable void (^)(UNNotificationContent * _Nonnull))contentHandler API_AVAILABLE(ios(10.0));
 
 @end

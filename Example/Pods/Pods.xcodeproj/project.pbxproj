@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,11 +16,13 @@
 			dependencies = (
 			);
 			name = nv_framework_test;
+			productName = nv_framework_test;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		0EB44BDEB828F3795504422EEEDC7C5F /* Pods-nv_framework_test_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2A91950D89988255C21A2D00E50503 /* Pods-nv_framework_test_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		350C4B4B2B4D4406004930CA /* notifyvisitors.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350C4B4A2B4D4406004930CA /* notifyvisitors.xcframework */; };
 		450B04D8ED3064A34DEAE11714054CC4 /* Pods-nv_framework_test_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E14D5FF76E1C31B6C1DA9B48E2A0D85 /* Pods-nv_framework_test_Example-dummy.m */; };
 		4F3DB70C2A609CCC59CA9A29197D93D1 /* Pods-nv_framework_test_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3805C0BFEC0A38546DFFBD9005E70B0 /* Pods-nv_framework_test_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6284023F5AE4FAE7067AFB8D303B52B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -53,8 +55,8 @@
 		226A558E3E47B2CB4E78DAD9D0F9E02F /* Pods-nv_framework_test_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-nv_framework_test_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2AF4EFF7BFBC924450700CC38611DA40 /* Pods-nv_framework_test_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nv_framework_test_Tests.modulemap"; sourceTree = "<group>"; };
 		2FC192BFF6CA1A770EE4FF4AEF12E287 /* Pods-nv_framework_test_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		350C4B4A2B4D4406004930CA /* notifyvisitors.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = notifyvisitors.xcframework; sourceTree = "<group>"; };
 		415207C103BEB2ACEB918461F8EB8F58 /* nv_framework_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nv_framework_test.debug.xcconfig; sourceTree = "<group>"; };
-		49BA31181B7FC2D315830EF821E62F87 /* notifyvisitors.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = notifyvisitors.xcframework; sourceTree = "<group>"; };
 		509C7D916DE74541D2044D6528415C67 /* nv_framework_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nv_framework_test.release.xcconfig; sourceTree = "<group>"; };
 		5E781DA03A6B046145A393BFD699DF05 /* Pods-nv_framework_test_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-nv_framework_test_Example"; path = Pods_nv_framework_test_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B3D805ECF40923C496A5E66E3D3CD1 /* Pods-nv_framework_test_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-nv_framework_test_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -64,16 +66,16 @@
 		84911E4485AA067FEDA8DDF4532D362F /* Pods-nv_framework_test_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nv_framework_test_Example-Info.plist"; sourceTree = "<group>"; };
 		8BACACE3E7BE0678810642D82CEA3F4B /* Pods-nv_framework_test_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-nv_framework_test_Tests"; path = Pods_nv_framework_test_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD3EF287978435E483354D937B72A34 /* Pods-nv_framework_test_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		939B1C7625A6ACBE9EEFF5D52CAC20BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		939B1C7625A6ACBE9EEFF5D52CAC20BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A538FFB04E77690411F210C3A5DA87B6 /* Pods-nv_framework_test_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-nv_framework_test_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF2A91950D89988255C21A2D00E50503 /* Pods-nv_framework_test_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nv_framework_test_Example-umbrella.h"; sourceTree = "<group>"; };
 		B09E05BF66F4112384DC363BD5F12B83 /* nv_framework_test-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "nv_framework_test-xcframeworks.sh"; sourceTree = "<group>"; };
 		B7E93FF3033A1DAB49089D7FA1C3F3E8 /* Pods-nv_framework_test_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-nv_framework_test_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D05A7FBCFCDF4097F3688E4DF3E5A30D /* Pods-nv_framework_test_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-nv_framework_test_Example.modulemap"; sourceTree = "<group>"; };
 		D3805C0BFEC0A38546DFFBD9005E70B0 /* Pods-nv_framework_test_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-nv_framework_test_Tests-umbrella.h"; sourceTree = "<group>"; };
-		EE1A0E02F85076FFF4995EA6C338339F /* nv_framework_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = nv_framework_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F776BB183E08A6A818127779E976A754 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EE1A0E02F85076FFF4995EA6C338339F /* nv_framework_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = nv_framework_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F776BB183E08A6A818127779E976A754 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E82D1BDAD05F7359829BD2B27809BA64 /* Foundation.framework in Frameworks */,
+				350C4B4B2B4D4406004930CA /* notifyvisitors.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +112,7 @@
 		3B12B85DB589D3BCE6707FE180CB7D5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49BA31181B7FC2D315830EF821E62F87 /* notifyvisitors.xcframework */,
+				350C4B4A2B4D4406004930CA /* notifyvisitors.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -401,7 +404,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -434,7 +441,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -458,7 +469,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -534,7 +548,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -558,7 +575,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Tests/Pods-nv_framework_test_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -658,7 +679,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-nv_framework_test_Example/Pods-nv_framework_test_Example.modulemap";
 				OTHER_LDFLAGS = "";
