@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'nv_framework_test'
-  s.version          = '5.0.1'
+  s.version          = '6.0.1'
   s.summary          = 'this is my first cocoapods for testing my nv xcframework'
   s.description      = 'This is my first cocoapods lib for testing my nv xcframework so that we can create lib for users'
 
